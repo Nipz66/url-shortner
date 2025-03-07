@@ -10,14 +10,14 @@ router.post('/shorten', async (req, res) => {
 
     try {
         const newUrl = new Url({ originalUrl, shortUrl });
-        await newUrl.save(); // Save to MongoDB
+        await newUrl.save(); 
         res.json({ shortUrl });
     } catch (err) {
         res.status(500).json({ error: 'Error shortening URL' });
     }
 });
 
-//  Redirect Short URL to Original URL
+
 router.get('/:shortUrl', async (req, res) => {
     try {
         const url = await Url.findOne({ shortUrl: req.params.shortUrl });
