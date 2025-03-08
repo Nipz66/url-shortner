@@ -3,7 +3,7 @@ const router = express.Router();
 const Url = require('./models/Url');
 const { nanoid } = require('nanoid');
 
-//  Shorten URL Endpoint
+
 router.post('/shorten', async (req, res) => {
     const { originalUrl } = req.body;
     const shortUrl = nanoid(6); // Generates a 6-character unique ID
