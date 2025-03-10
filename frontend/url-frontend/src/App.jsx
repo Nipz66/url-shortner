@@ -14,7 +14,7 @@ function App() {
       <div className='w-1/3'>
         <ShortenerForm addshortenedurl={addshortenedurl} />
         <ShortenedLinks shortenedUrls={ShortenedUrls} />
-        {/* <ToastContainer position="top-right" autoClose={3000} /> */}
+        <ToastContainer position="top-right" autoClose={3000} />
 
       </div>
     </div>
