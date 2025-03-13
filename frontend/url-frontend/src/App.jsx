@@ -3,6 +3,7 @@ import './App.css'
 import ShortenerForm from './components/ShortenerForm'
 import ShortenedLinks from './components/ShortenedLinks';
 import Header from './components/Head/Header';
+import Discription from './components/Body/Description'
 
 function App() {
   const [ShortenedUrls, setShortenedUrls] = useState([]);
@@ -13,8 +14,6 @@ function App() {
   return (
     <div>
       <Header />
-
-
       <div className='flex justify-center items-center min-h-screen bg-gray-100'>
         <div className='w-1/3'>
           <ShortenerForm addshortenedurl={addshortenedurl} />
@@ -23,6 +22,7 @@ function App() {
 
         </div>
       </div>
+      <Discription />
     </div>
   );
 }
