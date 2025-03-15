@@ -1,13 +1,14 @@
 'use client'
-
+import { Link } from "react-router-dom";
 import React from 'react'
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+
 const navigation = [
-    { name: 'LinkShortener', href: '#' },
-    { name: 'QR Code', href: '#' },
+    { name: 'LinkShortener', href: '{Header.jsx}' },
+    { name: 'QR Code', href: 'qr-code' },
     { name: 'Dashboard', href: '#' },
     { name: 'About Us', href: '#' },
 ]
@@ -40,10 +41,12 @@ function Header() {
                         </button>
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12">
-                        {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-gray-900">
-                                {item.name}
-                            </a>
+                        {navigation.map((item, index) => (
+                            <li key={index}>
+                                <Link to={item.href} className="text-white hover:text-gray-300">
+                                    {item.name}
+                                </Link>
+                            </li>
                         ))}
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
