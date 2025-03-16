@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ShortenerForm from './components/ShortenerForm'
 import ShortenedLinks from './components/ShortenedLinks';
 import Header from './components/Head/Header';
@@ -34,7 +35,7 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Home />} />
-        <Route path="/shorten" element={<URLShortener />} />
+        {/* <Route path="/shorten" element={<URLShortener />} /> */}
         <Route path="/qr-code" element={<QrcodeGenerate />} />
       </Routes>
 
