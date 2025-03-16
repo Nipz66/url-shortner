@@ -17,7 +17,7 @@ const features = [
     {
         name: 'Secure & Reliable',
         description:
-            'Ensures safe redirections without spam or malicious links.',
+            'Ensures safe redirection without spam or malicious links.',
         icon: ShieldCheckIcon,
     },
     {
