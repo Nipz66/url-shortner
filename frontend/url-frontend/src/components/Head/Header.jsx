@@ -43,7 +43,7 @@ function Header() {
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item, index) => (
                             <li key={index}>
-                                <Link to={item.href} className="text-white hover:text-gray-300">
+                                <Link to={item.href} className="text-blue-700 hover:text-gray-300 font-semibold">
                                     {item.name}
                                 </Link>
                             </li>
