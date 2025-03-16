@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import './App.css'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import './App.css'
 import ShortenerForm from './components/ShortenerForm'
 import ShortenedLinks from './components/ShortenedLinks';
 import Header from './components/Head/Header';
@@ -17,28 +17,16 @@ function App() {
   return (
 
     <Router>
-      <div>
-        <Header />
-        <div className='flex justify-center items-center min-h-screen bg-gray-100'>
-          <div className='w-1/3'>
-            <ShortenerForm addshortenedurl={addshortenedurl} />
-            <ShortenedLinks shortenedUrls={ShortenedUrls} />
-            {/* <ToastContainer position="top-right" autoClose={3000} /> */}
 
-          </div>
-        </div>
-        <Discription />
-        {/* <QrcodeGenerate /> */}
+      <Header />
 
-
-      </div>
       <Routes>
 
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} /> */}
         {/* <Route path="/shorten" element={<URLShortener />} /> */}
         <Route path="/qr-code" element={<QrcodeGenerate />} />
-      </Routes>
 
+      </Routes>
     </Router>
   );
 }
