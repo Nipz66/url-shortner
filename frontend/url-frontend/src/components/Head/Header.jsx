@@ -8,7 +8,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
 
-    { name: 'LinkShortener', href: '{Header.jsx}' },
+    { name: 'Shorter Link', href: '/shorten-link' },
     { name: 'QR Code', href: '/qr-code' },
     { name: 'Dashboard', href: '#' },
     { name: 'About Us', href: '#' },
