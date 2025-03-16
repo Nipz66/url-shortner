@@ -9,6 +9,8 @@ const ShortnerLink = () => {
     const handleShorten = async () => {
         if (!originalUrl) return toast.error("Please enter a URL");
 
+        //Linkshortner
+
         try {
             const { data } = await axios.post("http://localhost:5000/api/shorten", { originalUrl });
             setShortUrl(data.shortUrl);
