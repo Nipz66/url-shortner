@@ -4,9 +4,9 @@ import './App.css'
 import ShortenerForm from './components/ShortenerForm'
 import ShortenedLinks from './components/ShortenedLinks';
 import Header from './components/Head/Header';
-import Discription from './components/Body/Description'
 import QrcodeGenerate from './components/QrcodeGenerate';
 import Home from './components/Home/Home';
+
 
 function App() {
   const [ShortenedUrls, setShortenedUrls] = useState([]);
@@ -22,7 +22,7 @@ function App() {
 
       <Routes>
 
-        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/Home" element={<Home />} />
         {/* <Route path="/shorten" element={<URLShortener />} /> */}
         <Route path="/qr-code" element={<QrcodeGenerate />} />
 
