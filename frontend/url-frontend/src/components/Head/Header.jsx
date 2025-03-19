@@ -11,7 +11,7 @@ const navigation = [
     { name: 'Shorter Link', href: '/shorten-link' },
     { name: 'QR Code', href: '/qr-code' },
     { name: 'Dashboard', href: '#' },
-    { name: 'About Us', href: '#' },
+    { name: 'About Us', href: '/about-Us' },
 ]
 
 function Header() {
