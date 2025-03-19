@@ -10,7 +10,7 @@ const navigation = [
 
     { name: 'Shorter Link', href: '/shorten-link' },
     { name: 'QR Code', href: '/qr-code' },
-    { name: 'Dashboard', href: '#' },
+    { name: 'Dashboard', href: '/dashboard' },
     { name: 'About Us', href: '/about-Us' },
 ]
 

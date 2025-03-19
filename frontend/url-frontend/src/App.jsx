@@ -7,6 +7,7 @@ import Home from './components/Home/Home';
 import Linkshortner from './components/LinkShortner/Linkshortner';
 import ShortnerLink from './components/LinkShortner/ShortnerLink';
 import About from './components/About/About';
+import Dashboard from './components/Dashboard/Dashboard.JSX';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/shorten-link" element={<ShortnerLink />} />
         <Route path="/qr-code" element={<QrcodeGenerate />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/about-Us" element={<About />} />
 
       </Routes>
