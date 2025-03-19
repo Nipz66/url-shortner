@@ -8,6 +8,7 @@ import Linkshortner from './components/LinkShortner/Linkshortner';
 import ShortnerLink from './components/LinkShortner/ShortnerLink';
 import About from './components/About/About';
 import Dashboard from './components/Dashboard/Dashboard.JSX';
+import Login from './components/Login/Login';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/qr-code" element={<QrcodeGenerate />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/about-Us" element={<About />} />
+        <Route path='/login' element={<Login />} />
 
       </Routes>
     </Router>

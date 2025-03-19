@@ -1,5 +1,5 @@
 'use client'
-import { Link } from "react-router-dom";
+import { href, Link } from "react-router-dom";
 import React from 'react'
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
@@ -12,6 +12,7 @@ const navigation = [
     { name: 'QR Code', href: '/qr-code' },
     { name: 'Dashboard', href: '/dashboard' },
     { name: 'About Us', href: '/about-Us' },
+    { name: 'Login', href: '/login' }
 ]
 
 function Header() {

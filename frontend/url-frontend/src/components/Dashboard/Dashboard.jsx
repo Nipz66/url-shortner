@@ -33,7 +33,7 @@ const Dashboard = () => {
     return (
         <div className="flex flex-col w-full h-screen bg-gray-100">
             {/* Sidebar */}
-            <div className="flex-none bg-indigo-600 text-white w-64 p-4">
+            {/* <div className="flex-none bg-indigo-600 text-white w-64 p-4">
                 <h2 className="text-2xl font-semibold">Dashboard</h2>
                 <nav className="mt-4">
                     <ul>
@@ -48,7 +48,7 @@ const Dashboard = () => {
                         </li>
                     </ul>
                 </nav>
-            </div>
+            </div> */}
 
             {/* Main Dashboard Content */}
             <div className="flex-1 p-6">
